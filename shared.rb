@@ -2,7 +2,8 @@ require 'google/apis/prediction_v1_6'
 require 'googleauth'
 require 'pry'
 
-GOOGLE_APPLICATION_CREDENTIALS = '/Users/renee/Travis/ml_workshop/creds.json'
+GOOGLE_APPLICATION_CREDENTIALS = "#{File.expand_path(File.dirname(__FILE__))}/creds.json"
+
 
 scopes =  ['https://www.googleapis.com/auth/cloud-platform',
            'https://www.googleapis.com/auth/compute']
